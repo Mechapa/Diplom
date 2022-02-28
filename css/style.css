@@ -22,6 +22,7 @@
   display: none;
 }
 
+
 .header {
   position: relative;
   z-index: 0;
@@ -48,7 +49,7 @@
   
   background-color: #000000;
   opacity: 0.6;
-}  
+}
 
 .logo-link {
   width: 180px;
@@ -218,9 +219,11 @@
 }
 
 .page-conteiner {
+  max-width: 1200px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
+  margin: auto;
 }
 
 .main {
@@ -595,7 +598,9 @@
 
 .shop-container {
   width: 100%;
-  margin-bottom: 39px;
+  max-width: 1200px;
+  margin: 39px auto 0px auto;
+  
 }
 
 .shop-title {
@@ -793,6 +798,37 @@
   color: #999999;
 }
 
+.tags-link:hover,
+.shop-link:hover,
+.menu-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.trends-link:hover,
+.post-link:hover,
+.theme-list-link:hover {
+  color: #b59f5b;
+  cursor: pointer;
+}
+
+.search-fileld:focus,
+.mailing-field:focus {
+  outline: 1px solid #b59f5b;
+  outline-offset: -1px;
+}
+
+.search-button:hover,
+.subscribe-button:hover,
+.product-button:hover {
+  background-color: #323232;
+  cursor: pointer;
+}
+
+.tags-list-link:hover {
+  border: 3px solid #b59f5b;
+}
+
 .popup-background {
   position: fixed; 
   top: 0; 
@@ -800,7 +836,6 @@
   width: 100%; 
   height: 100%; 
   background: rgba(0,0,0,0.6);
-
 }
 
 .popup {
@@ -862,7 +897,7 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-family: opensans;
+  font-family: Sans-bold;
   margin-top: 0;
 }
 
@@ -883,7 +918,7 @@
   font-size: 13px;
   color: #000000;
   font-weight: 400;
-  font-family: opensans;
+  font-family: Sans-bold;
   width: 330px;
   margin-bottom: 12px;
 }
@@ -899,7 +934,7 @@
   background-color: #f4f7f6;
   border: none;
   padding-left: 20px;
-  font-family: opensans;
+  font-family: Sans-bold;
   font-size: 13px;
   color: #000000;
   font-weight: 400;
@@ -915,7 +950,7 @@
 }
 
 .radio_text {
-  font-family: opensans;
+  font-family: Sans-bold;
   font-size: 13px;
   font-weight: 400;
 }
@@ -947,7 +982,7 @@
   min-height: 130px;
   max-width: 330px;
   max-height: 130px;
-  font-family: opensans;
+  font-family: Sans-bold;
   padding: 20px;
   border: none;
   background-color: #f4f7f6;
@@ -1167,7 +1202,8 @@
     display: flex;  
     justify-content: space-between;
     align-items: center;
-    margin: 0 245px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 
   .post-description {
